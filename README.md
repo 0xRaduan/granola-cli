@@ -1,6 +1,10 @@
-![Granola CLI Logo](assets/logo.svg)
+<p>
+  <img src="assets/logo.png" alt="Granola logo" width="160" />
+</p>
 
-# Granola CLI (Bun + TypeScript)
+# Granola CLI (Community Edition)
+
+Community-maintained CLI for Granola meetings.
 
 [![npm version](https://img.shields.io/npm/v/@0xraduan/granola-cli.svg?color=1f8b4c)](https://www.npmjs.com/package/@0xraduan/granola-cli)
 [![license](https://img.shields.io/npm/l/@0xraduan/granola-cli.svg?color=2f6f9f)](LICENSE)
