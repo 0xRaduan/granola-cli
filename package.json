@@ -1,10 +1,10 @@
 {
   "name": "@0xraduan/granola-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "type": "module",
   "bin": {
-    "granola": "./bin/granola"
+    "granola": "bin/granola.js"
   },
   "scripts": {
     "dev": "bun run src/cli.ts",

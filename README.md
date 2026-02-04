@@ -26,12 +26,6 @@ curl -fsSL https://raw.githubusercontent.com/0xRaduan/granola-cli/main/scripts/i
 bun src/cli.ts meeting list --limit 5
 ```
 
-## Run (via bin)
-
-```bash
-./bin/granola meeting list --limit 5
-```
-
 ## Build (optional)
 
 ```bash
