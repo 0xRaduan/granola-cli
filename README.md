@@ -14,6 +14,12 @@ bun install -g @0xraduan/granola-cli
 npm install -g @0xraduan/granola-cli
 ```
 
+## Run (bunx)
+
+```bash
+bunx @0xraduan/granola-cli@latest meeting list --limit 5
+```
+
 ## Install (curl)
 
 ```bash

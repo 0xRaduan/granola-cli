@@ -1,5 +1,6 @@
 #!/usr/bin/env bun
 import { Command } from 'commander';
+import pkg from '../package.json' assert { type: 'json' };
 import { ApiClient } from './lib/api.js';
 import { extractAccessToken, readUserInfo } from './lib/auth.js';
 import {
@@ -21,7 +22,7 @@ import type { Document } from './lib/types.js';
 import { listFromApi, listFromCache, resolveMeetingIdFromList, type ListOptions, type SourceMode } from './lib/resolve.js';
 
 const program = new Command();
-const VERSION = '0.1.0';
+const VERSION = pkg.version || '0.0.0';
 
 void maybeCheckForUpdates(VERSION);
 
