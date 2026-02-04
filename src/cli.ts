@@ -16,15 +16,19 @@ import {
 } from './lib/cache.js';
 import { CliError, isCliError } from './lib/errors.js';
 import { defaultOutputFormat, formatEnhancedMarkdown, formatExportMarkdown, formatMeetingListMarkdown, formatMeetingMarkdown, formatNotesMarkdown, formatTranscriptMarkdownOutput, printJson } from './lib/output.js';
+import { maybeCheckForUpdates, runUpdateCommand } from './lib/update.js';
 import type { Document } from './lib/types.js';
 import { listFromApi, listFromCache, resolveMeetingIdFromList, type ListOptions, type SourceMode } from './lib/resolve.js';
 
 const program = new Command();
+const VERSION = '0.1.0';
+
+void maybeCheckForUpdates(VERSION);
 
 program
   .name('granola')
   .description('Unix-like CLI for Granola meetings')
-  .version('0.1.0')
+  .version(VERSION)
   .option('-o, --output <format>', 'Output format (json, markdown)')
   .option('--jsonl', 'Output JSON Lines for lists')
   .option('--source <mode>', 'Source mode: auto, api, cache', 'auto')
@@ -559,6 +563,14 @@ program
     if (!client) throw new CliError('Authentication required. Could not read Granola token.', 2);
     await client.refreshGoogleEvents();
     process.stdout.write('Sync requested.\n');
+  });
+
+program
+  .command('update')
+  .description('Update granola-cli via bun or npm')
+  .action(() => {
+    const code = runUpdateCommand();
+    process.exit(code);
   });
 
 program

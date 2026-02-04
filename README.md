@@ -2,10 +2,22 @@
 
 Unix-like CLI for Granola meetings with API-first auto mode and cache fallback.
 
-## Install
+## Install (bun)
 
 ```bash
-bun install
+bun install -g @0xraduan/granola-cli
+```
+
+## Install (npm)
+
+```bash
+npm install -g @0xraduan/granola-cli
+```
+
+## Install (curl)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/0xRaduan/granola-cli/main/scripts/install.sh | bash
 ```
 
 ## Run (dev)
@@ -24,6 +36,18 @@ bun src/cli.ts meeting list --limit 5
 
 ```bash
 bun run build
+```
+
+## Update
+
+```bash
+granola update
+```
+
+Disable update checks:
+
+```bash
+GRANOLA_DISABLE_UPDATE_CHECK=1 granola meeting list --limit 5
 ```
 
 ## Usage

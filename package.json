@@ -1,7 +1,7 @@
 {
-  "name": "granola-cli",
+  "name": "@0xraduan/granola-cli",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "type": "module",
   "bin": {
     "granola": "./bin/granola"
@@ -9,8 +9,16 @@
   "scripts": {
     "dev": "bun run src/cli.ts",
     "build": "bun build src/cli.ts --target node --outfile dist/cli.js",
-    "lint": "bunx tsc -p tsconfig.json --noEmit"
+    "lint": "bunx tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "bun run build"
   },
+  "files": [
+    "bin/",
+    "dist/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "commander": "^12.1.0"
   },
