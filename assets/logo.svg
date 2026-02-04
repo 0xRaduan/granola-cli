@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" role="img" aria-label="Granola CLI">
+  <defs>
+    <linearGradient id="grain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6e7c1"/>
+      <stop offset="1" stop-color="#e7b86a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f6f9f"/>
+      <stop offset="1" stop-color="#1f8b4c"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="640" height="180" fill="white"/>
+  <g transform="translate(20 20)">
+    <circle cx="70" cy="70" r="60" fill="url(#grain)" stroke="#8a5a1e" stroke-width="4"/>
+    <circle cx="52" cy="58" r="6" fill="#8a5a1e"/>
+    <circle cx="82" cy="52" r="6" fill="#8a5a1e"/>
+    <circle cx="88" cy="84" r="6" fill="#8a5a1e"/>
+    <circle cx="58" cy="88" r="6" fill="#8a5a1e"/>
+    <path d="M35 118c18 12 52 12 70 0" fill="none" stroke="#8a5a1e" stroke-width="5" stroke-linecap="round"/>
+    <rect x="132" y="30" width="12" height="80" fill="url(#accent)"/>
+    <rect x="148" y="30" width="12" height="80" fill="url(#accent)"/>
+  </g>
+  <text x="220" y="90" font-family="Georgia, 'Times New Roman', serif" font-size="44" fill="#2b2b2b" letter-spacing="1">Granola CLI</text>
+  <text x="222" y="125" font-family="'Courier New', monospace" font-size="16" fill="#5f5f5f">Meetings. Notes. Cache-first when it counts.</text>
+</svg>

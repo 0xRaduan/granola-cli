@@ -1,6 +1,20 @@
+![Granola CLI Logo](assets/logo.svg)
+
 # Granola CLI (Bun + TypeScript)
 
+[![npm version](https://img.shields.io/npm/v/@0xraduan/granola-cli.svg?color=1f8b4c)](https://www.npmjs.com/package/@0xraduan/granola-cli)
+[![license](https://img.shields.io/npm/l/@0xraduan/granola-cli.svg?color=2f6f9f)](LICENSE)
+[![Release](https://github.com/0xRaduan/granola-cli/actions/workflows/release.yml/badge.svg)](https://github.com/0xRaduan/granola-cli/actions/workflows/release.yml)
+
 Unix-like CLI for Granola meetings with API-first auto mode and cache fallback.
+
+## Features
+
+- Meetings: list, search, view, notes, enhanced summaries, transcripts, export
+- Metadata: workspaces, folders, people, shared docs, whoami
+- Sync and cache: API-first with fallback, cache-only mode, offline friendly
+- Output: JSON, Markdown, JSONL streaming for list/search
+- Updates: automatic update checks + `granola update`
 
 ## Install (bun)
 
