@@ -100,3 +100,15 @@ granola sync
 
 The CLI reads tokens from `~/Library/Application Support/Granola/supabase.json` by default.
 Use `GRANOLA_CREDENTIALS` and `GRANOLA_CACHE_PATH` to override paths.
+
+## Credits
+
+This project was informed by prior community implementations:
+
+- https://github.com/aaronvanston/granola-cli
+- https://github.com/HanifCarroll/granola-cli
+- https://github.com/jeffmcfadden/granola-cli
+- https://github.com/KierenB/granola-cli
+- https://github.com/LucioFranco/granola-cli
+- https://github.com/magarcia/granola-cli
+- https://github.com/MrMaksimize/granola-cli
