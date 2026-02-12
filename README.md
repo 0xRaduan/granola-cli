@@ -4,13 +4,13 @@
 
 # Granola CLI (Community Edition)
 
-Community-maintained CLI for Granola meetings.
+Community-maintained CLI for [Granola](https://www.granola.ai?via=raduan) meetings.
 
 [![npm version](https://img.shields.io/npm/v/@0xraduan/granola-cli.svg?color=1f8b4c)](https://www.npmjs.com/package/@0xraduan/granola-cli)
 [![license](https://img.shields.io/npm/l/@0xraduan/granola-cli.svg?color=2f6f9f)](LICENSE)
 [![Release](https://github.com/0xRaduan/granola-cli/actions/workflows/release.yml/badge.svg)](https://github.com/0xRaduan/granola-cli/actions/workflows/release.yml)
 
-Unix-like CLI for Granola meetings with API-first auto mode and cache fallback.
+Unix-like CLI for [Granola](https://www.granola.ai?via=raduan) meetings with API-first auto mode and cache fallback.
 
 ## Features
 
